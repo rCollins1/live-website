@@ -6,8 +6,8 @@ h1 {
 	position: absolute;
 	top: 406px;
 	left: 330px;
-	webkit-transform: rotate(334deg);
-	moz-transform: rotate(334deg);
-	ms-transform: rotate(334deg);
+	-webkit-transform: rotate(334deg);
+	-moz-transform: rotate(334deg);
+	-ms-transform: rotate(334deg);
 	font-family: courier;
 }
