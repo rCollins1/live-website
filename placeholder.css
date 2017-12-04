@@ -6,9 +6,11 @@ h1 {
 	position: absolute;
 	top: 410px;
 	left: 300px;
+	
 	-webkit-transform: rotate(-334deg);
 	-moz-transform: rotate(-334deg);
 	-ms-transform: rotate(-334deg);
+
 	font-family: courier;
 	color: #7895a3;
 }
