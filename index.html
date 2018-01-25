@@ -2,11 +2,250 @@
 <html>
 <head>
 	<title>Rachelyn Collins</title>
-	<link rel="stylesheet" href="placeholder.css">
-</head>
-<body>
 
-<h1>under temporary construction...</h1>
+	<link rel="stylesheet" href="chatbot/chatbot.css">
+	<link rel="stylesheet" href="main/main.css">
+  	<link rel="stylesheet" href="chatbot/animate.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700">
+  	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  	<script src="main/main.js"></script>
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body id="body">
+
+<section id="top">
+	<div class="header">
+		<img id="top-logo" src="logo.svg" alt="RClogo" width="60">
+		<h1 id="name" class="animation-target">Rachelyn Collins</h1>
+		<p>| developer | ux/ui designer |</p>
+	</div>
+</section>
+
+<section id="chat">
+	<div class="main-chat">
+		<div class="chatbox">
+			<ol id="messages">
+				<!-- messages from JS go here -->
+			</ol>
+		</div>
+
+		<div class="option-box">
+			<ul id="options">
+				<!-- options from JS go here -->
+			</ul>
+		</div>
+	</div>
+</section>
+
+<div class="section" id="section-about">
+	<hr>
+	<h2>Nice to meet you!</h2>
+	<p class="section-p">Hi, I'm Rachelyn. I'm a second year co-op student at the University of Waterloo.</p>
+	<div>
+		<h2>SKILLS</h2>
+		<p class="section-p">
+		<span class="skills-category">Design: </span>Sketch, Figma, Autodesk Inventor, SolidWorks CAD, Photoshop
+		<br>
+		<span class="skills-category">Technology: </span>HTML, JS, CSS, Velocity XPath, C++, Java, Github, Eclipse IDE, Arduino, Cascade CMS, Python
+		<br>
+		<span class="skills-category">Communication: </span>Provincial public speaking competitions, international business (DECA) competitions, board-level corporate proposals, executive of multiple city-wide clubs and organizations
+		</p>
+	</div>
+
+	<div>
+		<h2>EXPERIENCE</h2>
+		<span class="position">JUNIOR WEB DEVELOPER – AGF MANAGEMENT LTD.</span>
+		<ul>
+			<li class="section-p">Designed, developed and presented an investment quiz generator, involving an interface for an XML to JSON translator, to be used by other teams with no coding knowledge</li>
+			<li class="section-p">Automated parsing of XML content into Excel spreadsheet (cut a 4 hour process down to 15 minutes)</li>
+			<li class="section-p">Creating elements to be used throughout 3 AGF sites using Cascade’s CMS</li>
+			<li class="section-p">Communicated directly with marketing and studio for website specifications and redesign changes</li>
+		</ul>
+		<span class="position">UX/UI DESIGNER – TD LABS</span>
+		<ul>
+			<li class="section-p">Developed the user interface of a new financial literacy app from single function to feature complete as part of an Agile team</li>
+			<li class="section-p">Conducted extensive user testing using master-apprentice interview and guerilla testing techniques</li>
+			<li class="section-p">Proposed UX design decisions and presented analysis of user testing results to top board-level executives from TD Canada Trust at the Communitech Innovation Hub</li>
+		</ul>
+		<span class="position">QA ANALYST – SUVIEN</span>
+		<ul>
+			<li class="section-p">Tested Suvien’s mobile app and website which aided in memory retention for persons with dementia</li>
+			<li class="section-p">Analyzed and improved upon the organization’s promotional content using critical design skills</li>
+		</ul>
+		<span class="position">INTERNATIONAL CONSULTING COMPETITIONS – DECA</span>
+		<ul>
+			<li class="section-p">Represented Canada in international competitions after placing as one of Ontario’s top 5 competitors</li>
+			<li class="section-p">Taught business and finance workshops based on a self-curated curriculum to inexperienced members</li>
+		</ul>
+		<span class="position">PRESIDENT – VISUAL ARTS COUNCIL</span>
+		<ul>
+			<li class="section-p">Led a team of 6 executives and 30 members to create large-scale art projects</li>
+			<li class="section-p">Coordinated events with administration though well-documented proposals and reports</li>
+		</ul>
+	</div>
+
+</div>
+
+<div class="section" id="section-projects">
+
+	<hr>
+	<h2>What I've been up to...</h2>
+	<p class="section-p">Here are some projects I've been working on in my spare time!</p>
+
+	<div id="projects-thumbnails">
+		<div id="project-1" onclick="document.getElementById('id01').style.display='block'" class="project-thumbnail">
+			<div class="project-header">
+				<p class="project-title">SECURE-SAFE</p>
+			</div>
+			<div class="project-main">
+				<p class="project-description">Arduino project for a button-operated safe, including a LED light display.</p>
+			</div>
+		</div>
+		<div id="project-2" onclick="document.getElementById('id02').style.display='block'" class="project-thumbnail">
+			<div class="project-header">
+				<p class="project-title">THIS WEBSITE!</p>
+			</div>
+			<div class="project-main">
+				<p class="project-description">Created to serve as a portfolio, this website is constantly under construction.</p>
+			</div>
+		</div>
+		<div id="project-3" onclick="document.getElementById('id03').style.display='block'" class="project-thumbnail">
+			<div class="project-header">
+				<p class="project-title">DESIGN WORK</p>
+			</div>
+			<div class="project-main">
+				<p class="project-description">A compilation of some designs I've been working on using Sketch and Figma.</p>
+			</div>
+		</div>
+		<div id="project-4" onclick="document.getElementById('id04').style.display='block'" class="project-thumbnail">
+			<div class="project-header">
+				<p class="project-title">INVESTMENT QUIZ GENERATOR</p>
+			</div>
+			<div class="project-main">
+				<p class="project-description">Involves an interface for an XML to JSON translator, complete redesign and pdf download.</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div id="footer">
+	<a href="https://github.com/rCollins1"><i class="fa fa-github-square fa-lg"></i></a>
+	<a href="https://www.linkedin.com/in/rachelyncollins/"><i class="fa fa-linkedin-square fa-lg"></i></a>
+</div>
+
+  <div id="id01" class="w3-modal first-project-modal">
+    <div class="w3-modal-content w3-animate-bottom w3-card-4">
+      <header class="w3-container w3-black"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Secure-Safe</h2>
+      </header>
+      <div class="w3-container">
+        <p>With some complex coding and circuitry, a friend and I set out to make a safe complete with a passcode, motorized locking mechanism and LED light show.</p>
+        <video class="project-img" controls>
+  			<source src="main/assets/secure-safe/1.mov" type="video/mp4">
+  			Your browser does not support HTML5 video.
+		</video>
+        <p>The wiring on the inside allowed for the arduino to connect to the LED grid, buttons (passcode, lock and unlock), red indicator and the servo motor to open the lock.</p>
+        <img class="project-img" src="main/assets/secure-safe/2.jpg">
+        <p>A self-created timing function was used to lock out the user if they took too long to enter a code, and would automatically reset the password as needed.</p>
+        <img class="project-img" src="main/assets/secure-safe/3.jpg">
+        <p>Upon opening, the user would specify which 'slot' was now taken up by an item in the safe, which would toggle that spot of the LED grid and relock the safe.</p>
+      </div>
+      <footer class="w3-container w3-black projects-footer">
+        <p></p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="id02" class="w3-modal second-project-modal">
+    <div class="w3-modal-content w3-animate-bottom w3-card-4">
+      <header class="w3-container w3-black"> 
+        <span onclick="document.getElementById('id02').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>THIS WEBSTE!</h2>
+      </header>
+      <div class="w3-container">
+        <p>This website started as a fun project to do something with my 'rachelyn.com' domain. I quickly realized that it was also a great learning experience in how to go from a conceptual design into something I could show off to employers, friends and family.</p>
+        <p>Initially I started out with a bootstrap template, but quickly realized that my creativity felt restricted. The more I edited the template, the more I realized I had ideas that would be better created from scratch.</p>
+        <img class="project-img" src="main/assets/figma3.jpg">
+        <p>After getting some inspiration for a while, I designed some wireframes using Figma, and then set out creating the website from scratch, importing small open-source libraries as needed.</p>
+        <p>The simulated chatbot was a particularly fun secton to implement. I started with several iterations of flowcharts to ensure there would be no loopholes in the conversation. The chat was implemented by dynamically creating each text node through jquery, such that there is nothing but an empty section in the HTML.</p>
+        <img class="project-img" src="main/assets/lucidchart.png">
+        <p>It seems like every time I implement a feature, I come up with 3 more ideas for future functionality, so I think this prokect may never be 'completed'!</p>
+        <img class="project-img project-img-header" src="main/assets/header.jpg">
+      </div>
+      <footer class="w3-container w3-black projects-footer">
+        <p></p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="id03" class="w3-modal third-project-modal">
+    <div class="w3-modal-content w3-animate-bottom w3-card-4">
+      <header class="w3-container w3-black"> 
+        <span onclick="document.getElementById('id03').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>FIGMA DESIGNS</h2>
+      </header>
+      <div class="w3-container">
+        <p>amfhjaskldmghaskldmgh</p>
+      </div>
+      <footer class="w3-container w3-black projects-footer">
+        <p></p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+  <div id="id04" class="w3-modal fourth-project-modal">
+    <div class="w3-modal-content w3-animate-bottom w3-card-4">
+      <header class="w3-container w3-black"> 
+        <span onclick="document.getElementById('id04').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>INVESTMENT QUIZ GENERATOR</h2>
+      </header>
+      <div class="w3-container">
+        <p>My team and I were provided with an investment quiz created in Java with no documentation and were tasked with recreating it using modern frontend technologies.</p>
+        <p>I took the original flash quiz (left), played around with some wireframes (centre) and a couple iterations of design mockups (right) and presented my designs to the rest of the team.</p>
+        <div>
+        	<img  class="slides" src="main/assets/slide1.png">
+        	<img class="slides" src="main/assets/slide2.png">
+        	<img class="slides" src="main/assets/slide3.png">
+        </div>
+        <p>The coolest part of the project was how we decided to make the quiz run mainly through a sigular JSON file, containing questions, answers, point values of each question and all of the stock information given by the company.</p>
+        <p>This allowed me to go in later using the Cascade CMS and create a template for users from other departments without any coding knowledge (think marketing or studio) to get into the quiz and change data on a regular basis.</p>
+        <img class="project-img" src="main/assets/cmstoquiz.png">
+        <p>Since the data definition in Cascade exported an unorganized XML file, I used XPath tool extensively to generate and format a JSON file from the inputted content. Taking into account content types and exception cases, I was able to dynamically create a JSON file to work with the quiz template.</p>
+      </div>
+      <footer class="w3-container w3-black projects-footer">
+        <p></p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- For background lines (need to finish)
+<canvas id="line1" width="300" height="150"></canvas> -->
+
+<script>
+var c = document.getElementById("line1");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "red";
+ctx.rotate(20 * Math.PI / 180);
+ctx.fillRect(0, 2, 1000 + window.scrollY, 10);
+var a = window.scrollY;
+console.log(a);
+</script>
 
 </body>
 </html>
