@@ -17,7 +17,10 @@
 
 <section id="top">
 	<div class="header">
-		<img id="top-logo" src="logo.svg" alt="RClogo" width="60">
+		<svg width="96" height="131" viewBox="0 0 96 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path class="mypath" d="M32.992 94.0154L0 46.4286V125L32.992 94.0154ZM32.992 94.0154L54.4737 125H90L53.6932 74.5739M53.6932 74.5739L90 40.4762L60.3297 0H0L53.6932 74.5739Z" transform="translate(3 2)" stroke="black" stroke-width="3"/>
+		</svg>
+		<!-- <img id="top-logo" src="logo.svg" alt="RClogo" width="60"> -->
 		<h1 id="name" class="animation-target">Rachelyn Collins</h1>
 		<p>| developer | ux/ui designer |</p>
 	</div>
@@ -236,6 +239,19 @@
 
 <!-- For background lines (need to finish)
 <canvas id="line1" width="300" height="150"></canvas> -->
+
+<style>
+.mypath {
+	stroke-dasharray: 2000;
+	stroke-dashoffset: 2000;
+	animation: movement 10s linear forwards;
+}
+@keyframes movement {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+</style>
 
 <script>
 var c = document.getElementById("line1");
