@@ -1,3 +1,5 @@
+/*for line animations*/
+
 $(document).ready(function(){
 
 	function drawSetup(path){

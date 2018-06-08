@@ -158,15 +158,15 @@ body {
 }
 
 .tilt-main {
-	-webkit-transform: rotate(-352deg);
-    -moz-transform: rotate(-352deg);
-    -ms-transform: rotate(-352deg);
+	-webkit-transform: rotate(-358deg);
+    -moz-transform: rotate(-358deg);
+    -ms-transform: rotate(-358deg);
 }
 
 .tilt-title {
-	-webkit-transform: rotate(-16deg);
-    -moz-transform: rotate(-16deg);
-    -ms-transform: rotate(-16deg);
+	-webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
     color: #94ffd5;
 }
 
@@ -231,21 +231,6 @@ a:hover {
 
 
 /*Consider masking logo and showing gradient through it*/
-
-
-
-
-/*custom animation*/
- 
-#mysvg1 {
-    margin-top: 0px;
-  }
-
-
-
-
-
-
 
 
 

@@ -1,5 +1,3 @@
-/* NOTE: MAKE FUNCTION TO REMOVE ALL OPTIONS SO I DON'T HAVE TO WRITE REMOVE OVER AND OVER! */
-
 $(document).ready(function(){
 
 	var study, coop = 0;
@@ -14,7 +12,7 @@ $(document).ready(function(){
 	$(document).on('click', '#o-1a', function(){ /*How's studying going?*/
 		study = 1;
 		removeOptions();
-		$("#messages").append("<li class='message-li'><div class='user-message container'>How's studying going?</div></li>");
+		$("#messages").append("<li class='message-li right-msg'><div class='user-message container'>How's studying going?</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message container'>Having completed 2 school terms, I've got some favourite courses already:</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>Digital Systems (combinational logic and microcomputer interfacing),</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>Graphics (3D CAD and technical drawings),</div></li>");

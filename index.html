@@ -22,6 +22,9 @@
   	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   	<script src="main/main.js"></script>
   	<script src="main/customanimations.js"></script>
+  	<script src="Chatbot/chatbot-animation/src/message-bubbles.js"></script>
+  	<link rel="stylesheet" href="Chatbot/chatbot-animation/src/message-bubbles.css">
+  	<link rel="stylesheet" type="text/css" href="Chatbot/chatbot-animation/src/message-bubbles.scss">
   	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -49,7 +52,8 @@
 <section id="chat">
 	<div class="main-chat">
 		<div class="chatbox">
-			<ol id="messages">
+			<ul id="messages" class="rounded-messages messages-width-large reveal-messages msg-animation-fast">
+				<!-- this used to be ol above before i tried to use the cool github animations -->
 				<!-- messages from JS go here -->
 			</ol>
 		</div>
@@ -261,6 +265,22 @@
 
 
 
+<!-- GITHUB EXAMPLE
+<ul class="rounded-messages reveal-messages messages-width-medium msg-animation-fast">
+  <li class="left">Hello!</li>
+  <li class="time"><strong>Yesterday</strong> 12:25 pm</li>
+  <li class="right-msg">Hey, how are you?</li>
+  <li>I'm doing well</li>
+  <li>What about you?</li>
+  <li class="right-msg">Hardy har har.</li>
+  <li class="right-msg"><img src="https://tse4.mm.bing.net/th?id=OIP.Ma51851cded2f1d4bf2da6ff1e98df912o0&pid=15.1">I'm doing great! ;)</li>
+  <li class="right-msg">LOL</li>
+   <li class="time"><strong>Yesterday</strong> 3:44pm</li>
+  <li>Heck, yea! FOOTBALL!</li>
+  <li>😁</li>
+</ul>
+<br/><br/>
+ -->
 
 <!-- For background lines (need to finish)
 <canvas id="line1" width="300" height="150"></canvas> -->
