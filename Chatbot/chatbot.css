@@ -55,8 +55,8 @@
 }
 
 #options li:hover {
-	background-color: #353535;
-	color: #d9fffd;
+	background-color: #6a6a6a;
+	color: #FF8552;
 }
 
 span {
@@ -84,32 +84,33 @@ ol {
 /*Animation section*/
 
 .bot-message {
-  -webkit-animation: message-animation 2480ms linear both;
-  animation: message-animation 2480ms linear both;
+  -webkit-animation: shadow-drop 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: animation: shadow-drop 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-delay: 0.2s;
 }
 
+
 .bot-message-2 {
-  -webkit-animation: message-animation 2480ms linear both;
-  animation: message-animation 2480ms linear both;
+  -webkit-animation: shadow-drop 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: animation: shadow-drop 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-delay: 0.35s;
 }
 
 .bot-message-3 {
-  -webkit-animation: message-animation 2480ms linear both;
-  animation: message-animation 2480ms linear both;
+  -webkit-animation: shadow-drop 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: animation: shadow-drop 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-delay: 0.5s;
 }
 
 .bot-message-4 {
-  -webkit-animation: message-animation 2480ms linear both;
-  animation: message-animation 2480ms linear both;
+  -webkit-animation: shadow-drop 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: animation: shadow-drop 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-delay: 0.65s;
 }
 
 /* Generated with Bounce.js. Edit at https://goo.gl/8vxC1a */
 
-@-webkit-keyframes message-animation { 
+/*@-webkit-keyframes message-animation { 
   0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1); }
   1.65% { -webkit-transform: matrix3d(1.032, 0, 0, 0, 0, 1.032, 0, 0, 0, 0, 1, 0, -125.912, 0, 0, 1); transform: matrix3d(1.032, 0, 0, 0, 0, 1.032, 0, 0, 0, 0, 1, 0, -125.912, 0, 0, 1); }
   2.9% { -webkit-transform: matrix3d(1.047, 0, 0, 0, 0, 1.047, 0, 0, 0, 0, 1, 0, -47.015, 0, 0, 1); transform: matrix3d(1.047, 0, 0, 0, 0, 1.047, 0, 0, 0, 0, 1, 0, -47.015, 0, 0, 1); }
@@ -130,8 +131,9 @@ ol {
   80.78% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
 }
+*/
 
-@keyframes message-animation { 
+/*@keyframes message-animation { 
   0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1); }
   1.65% { -webkit-transform: matrix3d(1.032, 0, 0, 0, 0, 1.032, 0, 0, 0, 0, 1, 0, -125.912, 0, 0, 1); transform: matrix3d(1.032, 0, 0, 0, 0, 1.032, 0, 0, 0, 0, 1, 0, -125.912, 0, 0, 1); }
   2.9% { -webkit-transform: matrix3d(1.047, 0, 0, 0, 0, 1.047, 0, 0, 0, 0, 1, 0, -47.015, 0, 0, 1); transform: matrix3d(1.047, 0, 0, 0, 0, 1.047, 0, 0, 0, 0, 1, 0, -47.015, 0, 0, 1); }
@@ -151,6 +153,20 @@ ol {
   55.76% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   80.78% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}*/
+
+@-webkit-keyframes shadow-drop {
+  0% {
+     opacity: 0;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
 }
 
 .user-message {

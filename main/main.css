@@ -8,14 +8,14 @@ h1 {
 
 h2 {
 	font-family: Work Sans, sans-serif;
-    font-size: 1.8em;
-    overflow: visible;
+  font-size: 1.8em;
+  overflow: visible;
 }
 
 .section-p {
-    font-family: Work Sans, sans-serif;
-    font-size: 0.9em;
-    overflow: visible;
+  font-family: Work Sans, sans-serif;
+  font-size: 0.9em;
+  overflow: visible;
 }
 
 body {
@@ -47,7 +47,7 @@ body {
   animation: nameRainbow 3s infinite;
   -webkit-animation: nameRainbow 3s infinite;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: grey;
+/*  -webkit-text-stroke-color: grey;*/
 }
 
 .header {
@@ -87,19 +87,19 @@ body {
 }
 
 @keyframes nameRainbow {
-  0%   {color: #ffe7e7;}
-  25%  {color: #feffe7;}
-  50%  {color: #e7f6ff;}
-  75%  {color: #e7ffe7;}
-  100% {color: #ffe7e7;}
+  0%   {color: #8334af;}
+  25%  {color: #05386b;}
+  50%  {color: #a64253;}
+  75%  {color: #297373;}
+  100% {color: #ff8552;}
 }
 
 @-webkit-keyframes nameRainbow {
-  0%   {color: #ffe7e7;}
-  25%  {color: #feffe7;}
-  50%  {color: #e7f6ff;}
-  75%  {color: #e7ffe7;}
-  100% {color: #ffe7e7;}
+  0%   {color: #8334af;}
+  25%  {color: #05386b;}
+  50%  {color: #a64253;}
+  75%  {color: #297373;}
+  100% {color: #ff8552;}
 }
 
 .section {
@@ -107,7 +107,6 @@ body {
     max-width: 900px;
     min-width: 300px;
     margin: 0 auto;
-    margin-top: 100px;
     padding: 20px;
     overflow: hidden;
 }
@@ -158,16 +157,16 @@ body {
 }
 
 .tilt-main {
-	-webkit-transform: rotate(-352deg);
-    -moz-transform: rotate(-352deg);
-    -ms-transform: rotate(-352deg);
+	-webkit-transform: rotate(-354deg);
+    -moz-transform: rotate(-354deg);
+    -ms-transform: rotate(-354deg);
 }
 
 .tilt-title {
-	-webkit-transform: rotate(-16deg);
-    -moz-transform: rotate(-16deg);
-    -ms-transform: rotate(-16deg);
-    color: #94ffd5;
+	-webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    color: #05386B;
 }
 
 #footer {
@@ -191,10 +190,14 @@ a:hover {
 
 /*About section*/
 
+.section-about-100 {
+  width: 100%;
+}
+
 .skills-category {
     font-family: Work Sans, sans-serif;
     font-size: 1.2em;
-    color: #ffa7ff;
+    color: #A64253;
     overflow: visible;
     font-weight: bold;
 }
@@ -224,28 +227,13 @@ a:hover {
 .position {
   font-family: Work Sans, sans-serif;
   font-size: 1.2em;
-  color: #ff5292;
+  color: #297373;
   overflow: visible;
   font-weight: bold;
 }
 
 
 /*Consider masking logo and showing gradient through it*/
-
-
-
-
-/*custom animation*/
- 
-#mysvg1 {
-    margin-top: 0px;
-  }
-
-
-
-
-
-
 
 
 

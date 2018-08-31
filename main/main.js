@@ -1,9 +1,7 @@
-/* NOTE: MAKE FUNCTION TO REMOVE ALL OPTIONS SO I DON'T HAVE TO WRITE REMOVE OVER AND OVER! */
-
 $(document).ready(function(){
 
 	var study, coop = 0;
-	var td, agf = 0;
+	var td, agf, veeva = 0;
 
 		$("#messages").append("<li class='message-li'><div class='bot-message container'>Hi! I'm Rachelyn :)</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>I'm a second-year student studying Systems Design Engineering at the University of Waterloo.</div></li>");
@@ -15,10 +13,11 @@ $(document).ready(function(){
 		study = 1;
 		removeOptions();
 		$("#messages").append("<li class='message-li'><div class='user-message container'>How's studying going?</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message container'>Having completed 2 school terms, I've got some favourite courses already:</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message container'>Having completed 3 school terms,  here are some of my favourite courses so far:</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>Digital Systems (combinational logic and microcomputer interfacing),</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>Graphics (3D CAD and technical drawings),</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message-4 container'>...and of course, Human Factors in Design (human-machine environments, ergonomic design and information processing).</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>Data Structures and Algorithms (algorithm analysis and design),</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-4 container'>...and Human Factors in Design (human-machine environments, ergonomic design and information processing).</div></li>");
 		if (coop != 1){
 			$("#options").append("<li class='option' id='o-2a'><span>Tell me about co-op.</span></li>");
 		}
@@ -34,19 +33,23 @@ $(document).ready(function(){
 		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>For my first work term I was with TD Labs in Waterloo, and for my second term I was with AGF Management in downtown Toronto.</div></li>");
 		$("#options").append("<li class='option' id='o-3a'><span>How was TD Bank?</span></li>");
 		$("#options").append("<li class='option' id='o-3b'><span>What was AGF all about?</span></li>");
+		$("#options").append("<li class='option' id='o-3c'><span>What did you do at Veeva?</span></li>");
  	});
 
  	$(document).on('click', '#o-2a', function(){ /*Tell me about co-op.*/
  		coop = 1;
  		removeOptions();
 		$("#messages").append("<li class='message-li'><div class='user-message container'>Tell me about co-op.</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message container'>I love it! I've had two (vastly different) work terms so far.</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>For my first work term I was with TD Labs in Waterloo, and for my second term I was with AGF Management in downtown Toronto.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message container'>I love it! I've had three vastly different work terms so far.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>For my first work term I was a TD Labs in Waterloo, and for my second term I was with AGF Management in downtown Toronto. For my third work term, I was a product manager at Veeva Systems, also in downtown Toronto.</div></li>");
 		if (td != 1){
 			$("#options").append("<li class='option' id='o-3a'><span>How was TD Bank?</span></li>");
 		}
 		if (agf !=1){
 			$("#options").append("<li class='option' id='o-3b'><span>What was AGF all about?</span></li>");
+		}
+		if (veeva !=1){
+			$("#options").append("<li class='option' id='o-3c'><span>What did you do at Veeva?</span></li>");
 		}
 	}); 
 
@@ -56,17 +59,16 @@ $(document).ready(function(){
 		$("#messages").append("<li class='message-li'><div class='user-message container'>Outside of school and work?</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message container'>I'm a competitive dancer and hockey player!</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>I love psychology (thank goodness for electives!) which lends itself well to design thinking.</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>I'm also constantly reading, and Harry Potter will always have a place in my heart.</div></li>");
 		$("#options").append("<li class='option' id='o-5a'><span>Let's chat</span></li>");
-		$("#options").append("<li class='option' id='o-5b'><span>Brb</span></li>");
+		$("#options").append("<li class='option' id='o-5b'><span>Thanks, bye!</span></li>");
  	});
 
   	$(document).on('click', '#o-2c', function(){ /*But...what is Systems?*/
  		removeOptions();
 		$("#messages").append("<li class='message-li'><div class='user-message container'>But...what is Systems?</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message container'>It seems like noone has a great definition...</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message container'>Well, it seems to be a little hard to define.'</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>I like to think of it as an <em>engineering</em> degree with a focus on optimizing the <em>design</em> process and how complex parts can work together in a <em>system</em>.</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>If you're still curious, here's <a href='https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering' target='_blank'>UW's best attempt</a> at explaining it.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>If you're still curious, here's <a href='https://uwaterloo.ca/systems-design-engineering/about-systems-design-engineering/what-systems-design-engineering' target='_blank'>UW's attempt</a> at explaining it.</div></li>");
 		if (coop != 1){
 			$("#options").append("<li class='option' id='o-2a'><span>Tell me about co-op.</span></li>");
 		}
@@ -81,6 +83,45 @@ $(document).ready(function(){
 		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>I loved creating the UI and conducting user testing where I got to chat with adorable little kids and figure out how I could modify my designs to optimize their user experience.</div></li>");
 		if (agf != 1){
 			$("#options").append("<li class='option' id='o-4a'><span>How about AGF?</span></li>");
+		}
+		if (veeva != 1){
+			$("#options").append("<li class='option' id='o-4d'><span>What did you do at Veeva?</span></li>");
+		}
+		if (study != 1){
+			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
+		}
+		$("#options").append("<li class='option' id='o-2b'><span>Outside of school and work?</span></li>");
+ 	});
+
+ 	$(document).on('click', '#o-4d', function(){ /*What did you do at Veeva?*/
+ 		veeva = 1;
+ 		removeOptions();
+		$("#messages").append("<li class='message-li'><div class='user-message container'>What did you do at Veeva?</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message container'>I was a Product Manager at <a href='https://www.veeva.com/' target='_blank'>Veeva Systems</a>, where I defined the functions of 5 features over the course of the co-op term.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>I pitched each of my completed designs to the rest of the product management team, then led a development team to take the feature to production.</div></li>");
+		if (agf != 1){
+			$("#options").append("<li class='option' id='o-4a'><span>How about AGF?</span></li>");
+		}
+		if (td != 1){
+			$("#options").append("<li class='option' id='o-4c'><span>How about TD?</span></li>");
+		}
+		if (study != 1){
+			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
+		}
+		$("#options").append("<li class='option' id='o-2b'><span>Outside of school and work?</span></li>");
+ 	});
+
+ 	$(document).on('click', '#o-3c', function(){ /*What did you do at Veeva?*/
+ 		veeva = 1;
+ 		removeOptions();
+		$("#messages").append("<li class='message-li'><div class='user-message container'>What did you do at Veeva?</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message container'>I was a Product Manager at <a href='https://www.veeva.com/' target='_blank'>Veeva Systems</a>, where I defined the functions of 5 features over the course of the co-op term.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>I pitched each of my completed designs to the rest of the product management team, then led a development team to take the feature to production.</div></li>");
+		if (agf != 1){
+			$("#options").append("<li class='option' id='o-4a'><span>How about AGF?</span></li>");
+		}
+		if (td != 1){
+			$("#options").append("<li class='option' id='o-4c'><span>How about TD?</span></li>");
 		}
 		if (study != 1){
 			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
@@ -97,6 +138,9 @@ $(document).ready(function(){
 		if (td != 1){
 			$("#options").append("<li class='option' id='o-4c'><span>How about TD?</span></li>");
 		}
+		if (veeva != 1){
+			$("#options").append("<li class='option' id='o-4d'><span>What did you do at Veeva?</span></li>");
+		}
 		if (study != 1){
 			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
 		}
@@ -111,6 +155,9 @@ $(document).ready(function(){
 		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>I was lucky to be a part of a major brand redesign! I also learned a lot about the complex workings of content management systems.</div></li>");
 		if (td != 1){
 			$("#options").append("<li class='option' id='o-4c'><span>How about TD?</span></li>");
+		}
+		if (veeva != 1){
+			$("#options").append("<li class='option' id='o-4d'><span>What did you do at Veeva?</span></li>");
 		}
 		if (study != 1){
 			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
@@ -142,6 +189,9 @@ $(document).ready(function(){
 		if (agf != 1){
 			$("#options").append("<li class='option' id='o-4a'><span>How about AGF?</span></li>");
 		}
+		if (veeva != 1){
+			$("#options").append("<li class='option' id='o-4d'><span>What did you do at Veeva?</span></li>");
+		}
 		if (study != 1){
 			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
 		}
@@ -155,10 +205,10 @@ $(document).ready(function(){
 		/*ADD INPUT FOR CONTACT INFO HERE*/
  	});
 
- 	$(document).on('click', '#o-5b', function(){ /*Brb*/
+ 	$(document).on('click', '#o-5b', function(){ /*Thanks, bye!*/
  		removeOptions();
-		$("#messages").append("<li class='message-li'><div class='user-message container'>Brb</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message container'>Okay :) In that case, keep scrolling...</div></li>");
+		$("#messages").append("<li class='message-li'><div class='user-message container'>Thanks, bye!</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message container'>Go ahead, keep scrolling...</div></li>");
  	});
 
 
@@ -192,7 +242,7 @@ $(".project-thumbnail").hover(
 });
 
 function removeOptions(){
-	$("#o-1a, #o-1b, #o-2a, #o-2b, #o-2c, #o-3a, #o-3b, #o-4a, #o-4b, #o-4c, #o-5a, #o-5b").remove();
+	$("#o-1a, #o-1b, #o-2a, #o-2b, #o-2c, #o-3a, #o-3b, #o-3c, #o-4a, #o-4b, #o-4c, #o-4d, #o-5a, #o-5b").remove();
 }
 
 function closeProjects(){
