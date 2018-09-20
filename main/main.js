@@ -239,6 +239,23 @@ $(".project-thumbnail").hover(
 
 
 
+
+
+
+$("#name").click(
+  function () {
+    $(".tree-left").toggleClass('hide-trees');
+    $(".tree-right").toggleClass('hide-trees');
+  },
+);
+
+
+
+
+
+
+
+
 });
 
 function removeOptions(){
