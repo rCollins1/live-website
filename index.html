@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<!--COLOUR PALETTE:
+LIGHT CORAL: #ED8A82
+MINION YELLOW: #F4E04D
+LIGHT SEA GREEN: #21B6AF
+MEDIUM SPRING BUD: #CEEC97
+TART ORANGE: #FE4A49
+-->
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120234778-1"></script>
@@ -18,6 +26,7 @@
 	<link rel="stylesheet" href="main/main.css">
   	<link rel="stylesheet" href="Chatbot/animate.css">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700">
   	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
   	<script src="main/main.js"></script>
@@ -57,7 +66,7 @@
 		</svg>
 		<!-- <img id="top-logo" src="logo.svg" alt="RClogo" width="60"> -->
 		<h1 id="name" class="animation-target">Rachelyn Collins</h1>
-		<p>| developer | product manager | ux/ui designer |</p>
+		<p>| product manager | developer | ux/ui designer |</p>
 	</div>
 </section>
 
@@ -78,62 +87,151 @@
 </section>
 
 <div class="section-about-100">
+
 	<div class="section" id="section-about">
-		<hr>
+
 		<h2>Nice to meet you!</h2>
-		<p class="section-p">Hi, I'm Rachelyn. I'm a co-op student in Systems Design Engineering at the University of Waterloo.</p>
-		<div>
-			<h2>SKILLS</h2>
-			<p class="section-p">
-			<span class="skills-category">Design: </span>Sketch, Figma, Autodesk Inventor, SolidWorks CAD, Photoshop
-			<br>
-			<span class="skills-category">Technology: </span>HTML, JS, CSS, SQL, Velocity XPath, C++, Java, Github, Eclipse IDE, Arduino, Cascade CMS, Python
-			<br>
-			<span class="skills-category">Communication: </span>Provincial public speaking competitions, international business competitions (DECA), executive of city-wide clubs and organizations
-			</p>
-		</div>
+		<p class="section-p" id="hi-paragraph">Hi, I'm Rachelyn. I'm a co-op student in Systems Design Engineering at the University of Waterloo.</p>
 
 		<div>
-			<h2>EXPERIENCE</h2>
-			<span class="position">PRODUCT MANAGER – VEEVA SYSTEMS</span>
-			<ul>
-				<li class="section-p">Responsible for defining the features of the Veeva Network product, outlining its business need and ultimate solution</li>
-				<li class="section-p">Pitched five unique feature designs to the Product Management team over the course of the co-op term</li>
-				<li class="section-p">Worked with UX designers and developers to bring each feature to production</li>
-			</ul>
-			<span class="position">JUNIOR WEB DEVELOPER – AGF MANAGEMENT LTD.</span>
-			<ul>
-				<li class="section-p">Designed, developed and presented an investment quiz generator, involving an interface for an XML to JSON translator, to be used by other teams with no coding knowledge</li>
-				<li class="section-p">Automated parsing of XML content into Excel spreadsheet (cut a 4 hour process down to 15 minutes)</li>
-				<li class="section-p">Creating elements to be used throughout 3 AGF sites using Cascade’s CMS</li>
-				<li class="section-p">Communicated directly with marketing and studio for website specifications and redesign changes</li>
-			</ul>
-			<span class="position">UX/UI DESIGNER – TD LABS</span>
-			<ul>
-				<li class="section-p">Developed the user interface of a new financial literacy app from single function to feature complete as part of an Agile team</li>
-				<li class="section-p">Conducted extensive user testing using master-apprentice interview and guerilla testing techniques</li>
-				<li class="section-p">Proposed UX design decisions and presented analysis of user testing results to top board-level executives from TD Canada Trust at the Communitech Innovation Hub</li>
-			</ul>
-			<span class="position">PRESIDENT – VISUAL ARTS COUNCIL</span>
-			<ul>
-				<li class="section-p">Led a team of 6 executives and 30 members to create large-scale art projects</li>
-				<li class="section-p">Coordinated events with administration though well-documented proposals and reports</li>
-			</ul>
+
+			<div class="card text-white mb-3 card-skills-bigger">
+			  <div class="card-body card-skills">
+			    <h5 class="card-title">DESIGN</h5>
+			    <p class="card-text">
+			    	Sketch
+			    	<br>
+			    	Figma
+			    	<br>
+			    	Sketch
+			    	<br>
+			    	SolidWorks
+			    	<br>
+			    	Autodesk Inventor
+			    	<br>
+			    	Marvel
+			    	<br>
+			    	Zepplin
+			    </p>
+			  </div>
+			</div>
+
+			<div class="card text-white mb-3 card-skills-bigger">
+			  <div class="card-body card-skills">
+			    <h5 class="card-title">METHODS</h5>
+			    <p class="card-text">
+			    	Product Requirement Documents
+			    	<br>
+			    	User Journey Maps
+			    	<br>
+			    	Design Sprint Methodology
+			    	<br>
+			    	Persona Development
+			    	<br>
+			    	User Interviews
+			    	<br>
+			    	Heuristic Evaluation
+			    </p>
+			  </div>
+			</div>
+
+			<div class="card text-white mb-3 card-skills-bigger">
+			  <div class="card-body card-skills">
+			    <h5 class="card-title">TECHNOLOGY</h5>
+			    <p class="card-text">
+			    	Bootstrap
+			    	<br>
+			    	Arduino
+			    	<br>
+			    	Git
+			    	<br>
+			    	Velocity XPath
+			    	<br>
+			    	Javascript
+			    	<br>
+			    	Python
+			    	<br>
+			    	SQL
+			    	<br>
+			    	Jira
+			    	<br>
+			    	Java
+			    	<br>
+			    	C++
+			    </p>
+			  </div>
+			</div>
+
 		</div>
 
 	</div>
+
+</div>
+
+<div class="section-experience-100">
+
+	<div class="section" id="section-experience">
+
+		<h2>Experience</h2>
+
+		<div class="card text-white card-experience-bigger" style="width: 100%;">
+			  <div class="card-body card-experience">
+			    <h5 class="card-title">PRODUCT MANAGER – ECOBEE</h5>
+			    <p class="card-text">
+			    	<li class="section-p">Iterated on the design of a new ecobee hardware product through rapid 3D print prototyping, user testing and employee field trials</li>
+					<li class="section-p">Designed a Product Analytics Dashboard to be used internally for data-driven product decisions, outlining user stories, success benchmarks and a plan for implementation</li>
+					<li class="section-p">Organized and executed customer field trials for unreleased products, ensuring reliable FUSS and Net Promotor Scores of >65%</li>
+			    </p>
+			  </div>
+		</div>
+
+		<div class="card text-white card-experience-bigger" style="width: 100%;">
+			  <div class="card-body card-experience">
+			    <h5 class="card-title">PRODUCT MANAGER – VEEVA SYSTEMS</h5>
+			    <p class="card-text">
+			    	<li class="section-p">Responsible for defining the features of the Veeva Network product, outlining its business need and ultimate solution</li>
+					<li class="section-p">Pitched five unique feature designs to the Product Management team over the course of the co-op term</li>
+					<li class="section-p">Worked with UX designers and developers to bring each feature to production</li>
+			    </p>
+			  </div>
+		</div>
+
+		<div class="card text-white card-experience-bigger" style="width: 100%;">
+			  <div class="card-body card-experience">
+			    <h5 class="card-title">JUNIOR WEB DEVELOPER – AGF MANAGEMENT LTD.</h5>
+			    <p class="card-text">
+			    	<li class="section-p">Designed, developed and presented an investment quiz generator, involving an interface for an XML to JSON translator, to be used by other teams with no coding knowledge</li>
+					<li class="section-p">Automated parsing of XML content into Excel spreadsheet (cut a 4 hour process down to 15 minutes)</li>
+					<li class="section-p">Creating elements to be used throughout 3 AGF sites using Cascade’s CMS</li>
+					<li class="section-p">Communicated directly with marketing and studio for website specifications and redesign changes</li>
+				    </p>
+			  </div>
+		</div>
+
+		<div class="card text-white card-experience-bigger" style="width: 100%;">
+			  <div class="card-body card-experience">
+			    <h5 class="card-title">UX/UI DESIGNER – TD LABS</h5>
+			    <p class="card-text">
+			    	<li class="section-p">Developed the user interface of a new financial literacy app from single function to feature complete as part of an Agile team</li>
+					<li class="section-p">Conducted extensive user testing using master-apprentice interview and guerilla testing techniques</li>
+					<li class="section-p">Proposed UX design decisions and presented analysis of user testing results to top board-level executives from TD Canada Trust at the Communitech Innovation Hub</li>
+				    </p>
+			  </div>
+		</div>
+
+	</div>
+
 </div>
 
 <div class="section" id="section-projects">
 
-	<hr>
 	<h2>What I've been up to...</h2>
-	<p class="section-p">Here are some projects I've been working on in my spare time!</p>
+	<p class="section-p" id="section-projects-subheading">Here are some projects I've been working on in my spare time!</p>
 
 	<div id="projects-thumbnails">
 		<div id="project-1" onclick="document.getElementById('id01').style.display='block'" class="project-thumbnail">
 			<div class="project-header">
-				<p class="project-title">SECURE-SAFE</p>
+				<p class="project-title">Secure-Safe</p>
 			</div>
 			<div class="project-main">
 				<p class="project-description">Arduino project for a button-operated safe, including a LED light display.</p>
@@ -141,7 +239,7 @@
 		</div>
 		<div id="project-2" onclick="document.getElementById('id02').style.display='block'" class="project-thumbnail">
 			<div class="project-header">
-				<p class="project-title">THIS WEBSITE!</p>
+				<p class="project-title">This Website</p>
 			</div>
 			<div class="project-main">
 				<p class="project-description">Created to serve as a portfolio, this website is constantly under construction.</p>
@@ -149,7 +247,7 @@
 		</div>
 		<div id="project-3" onclick="document.getElementById('id03').style.display='block'" class="project-thumbnail">
 			<div class="project-header">
-				<p class="project-title">DESIGN WORK</p>
+				<p class="project-title">Design WorkK</p>
 			</div>
 			<div class="project-main">
 				<p class="project-description">A compilation of some designs I've been working on using Sketch and Figma.</p>

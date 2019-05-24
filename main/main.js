@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
 	var study, coop = 0;
-	var td, agf, veeva = 0;
+	var td, agf, veeva, ecobee = 0;
 
 		$("#messages").append("<li class='message-li'><div class='bot-message container'>Hi! I'm Rachelyn :)</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>I'm a second-year student studying Systems Design Engineering at the University of Waterloo.</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>I alternate between study and co-op / work terms.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>I'm a third-year student studying Systems Design Engineering at the University of Waterloo.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>I am currently searching for a position for my 5th co-op term!</div></li>");
 		$("#options").append("<li class='option' id='o-1a'><span>How's studying going?</span></li>");
 		$("#options").append("<li class='option' id='o-1b'><span>How's co-op going?</span></li>");
 
@@ -13,11 +13,11 @@ $(document).ready(function(){
 		study = 1;
 		removeOptions();
 		$("#messages").append("<li class='message-li'><div class='user-message container'>How's studying going?</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message container'>Having completed 3 school terms,  here are some of my favourite courses so far:</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message container'>Having completed 4 school terms,  here are some of my favourite courses so far:</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>Digital Systems (combinational logic and microcomputer interfacing),</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>Graphics (3D CAD and technical drawings),</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>Data Structures and Algorithms (algorithm analysis and design),</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message-4 container'>...and Human Factors in Design (human-machine environments, ergonomic design and information processing).</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-4 container'>Data Structures and Algorithms (algorithm analysis and design),</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-5 container'>...and Human Factors in Design (human-machine interfaces and ergonomic design).</div></li>");
 		if (coop != 1){
 			$("#options").append("<li class='option' id='o-2a'><span>Tell me about co-op.</span></li>");
 		}
@@ -29,19 +29,20 @@ $(document).ready(function(){
  		coop = 1;
  		removeOptions();
 		$("#messages").append("<li class='message-li'><div class='user-message container'>How's co-op going?</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message container'>I love it! I've had two (vastly different) work terms so far.</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>For my first work term I was with TD Labs in Waterloo, and for my second term I was with AGF Management in downtown Toronto.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message container'>I love it! I've had four (vastly different) work terms so far.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>I've worked as a UX/UI designer at TD Labs, a Web Developer at AGF Management, a Product Manager at Veeva Systems and a Product Manager at ecobee.</div></li>");
 		$("#options").append("<li class='option' id='o-3a'><span>How was TD Bank?</span></li>");
 		$("#options").append("<li class='option' id='o-3b'><span>What was AGF all about?</span></li>");
 		$("#options").append("<li class='option' id='o-3c'><span>What did you do at Veeva?</span></li>");
+		$("#options").append("<li class='option' id='o-4e'><span>What was ecobee like?</span></li>");
  	});
 
  	$(document).on('click', '#o-2a', function(){ /*Tell me about co-op.*/
  		coop = 1;
  		removeOptions();
 		$("#messages").append("<li class='message-li'><div class='user-message container'>Tell me about co-op.</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message container'>I love it! I've had three vastly different work terms so far.</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>For my first work term I was a TD Labs in Waterloo, and for my second term I was with AGF Management in downtown Toronto. For my third work term, I was a product manager at Veeva Systems, also in downtown Toronto.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message container'>I love it! I've had four (vastly different) work terms so far.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>I've worked as a UX/UI designer at TD Labs, a Web Developer at AGF Management, a Product Manager at Veeva Systems and a Product Manager at ecobee.</div></li>");
 		if (td != 1){
 			$("#options").append("<li class='option' id='o-3a'><span>How was TD Bank?</span></li>");
 		}
@@ -50,6 +51,9 @@ $(document).ready(function(){
 		}
 		if (veeva !=1){
 			$("#options").append("<li class='option' id='o-3c'><span>What did you do at Veeva?</span></li>");
+		}
+		if (ecobee !=1){
+			$("#options").append("<li class='option' id='o-3d'><span>What was ecobee like?</span></li>");
 		}
 	}); 
 
@@ -87,6 +91,9 @@ $(document).ready(function(){
 		if (veeva != 1){
 			$("#options").append("<li class='option' id='o-4d'><span>What did you do at Veeva?</span></li>");
 		}
+		if (ecobee != 1){
+			$("#options").append("<li class='option' id='o-3d'><span>What was ecobee like?</span></li>");
+		}
 		if (study != 1){
 			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
 		}
@@ -105,11 +112,15 @@ $(document).ready(function(){
 		if (td != 1){
 			$("#options").append("<li class='option' id='o-4c'><span>How about TD?</span></li>");
 		}
+		if (td != 1){
+			$("#options").append("<li class='option' id='o-4e'><span>What was ecobee like?</span></li>");
+		}
 		if (study != 1){
 			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
 		}
 		$("#options").append("<li class='option' id='o-2b'><span>Outside of school and work?</span></li>");
  	});
+
 
  	$(document).on('click', '#o-3c', function(){ /*What did you do at Veeva?*/
  		veeva = 1;
@@ -122,6 +133,9 @@ $(document).ready(function(){
 		}
 		if (td != 1){
 			$("#options").append("<li class='option' id='o-4c'><span>How about TD?</span></li>");
+		}
+		if (td != 1){
+			$("#options").append("<li class='option' id='o-4e'><span>What was ecobee like?</span></li>");
 		}
 		if (study != 1){
 			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
@@ -141,6 +155,9 @@ $(document).ready(function(){
 		if (veeva != 1){
 			$("#options").append("<li class='option' id='o-4d'><span>What did you do at Veeva?</span></li>");
 		}
+		if (td != 1){
+			$("#options").append("<li class='option' id='o-3d'><span>What was ecobee like?</span></li>");
+		}
 		if (study != 1){
 			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
 		}
@@ -159,6 +176,54 @@ $(document).ready(function(){
 		if (veeva != 1){
 			$("#options").append("<li class='option' id='o-4d'><span>What did you do at Veeva?</span></li>");
 		}
+		if (td != 1){
+			$("#options").append("<li class='option' id='o-4e'><span>What was ecobee like?</span></li>");
+		}
+		if (study != 1){
+			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
+		}
+		$("#options").append("<li class='option' id='o-2b'><span>Outside of school and work?</span></li>");
+ 	});
+
+ 	$(document).on('click', '#o-4e', function(){ /*What was ecobee like?*/
+ 		ecobee = 1;
+ 		removeOptions();
+		$("#messages").append("<li class='message-li'><div class='user-message container'>What was ecobee like?</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message container'>I was a Product Manager at <a href='https://www.ecobee.com/' target='_blank'>ecobee</a>, where I iterated on the design of a new ecobee hardware product through rapid 3D print prototyping, user testing and employee field trials.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>My favourite project of the term was designing a Product Analytics Dashboard to be used internally for data-driven product decisions. I was given the opportunity to completely own the project: outlining user stories, success benchmarks and a plan for implementation.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>I also organized and executed several customer field trials for unreleased products, ensuring reliable FUSS and Net Promotor Scores of >65%.</div></li>");
+		if (agf != 1){
+			$("#options").append("<li class='option' id='o-4a'><span>How about AGF?</span></li>");
+		}
+		if (td != 1){
+			$("#options").append("<li class='option' id='o-4c'><span>How about TD?</span></li>");
+		}
+		if (veeva != 1){
+			$("#options").append("<li class='option' id='o-4d'><span>What did you do at Veeva?</span></li>");
+		}
+		if (study != 1){
+			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
+		}
+		$("#options").append("<li class='option' id='o-2b'><span>Outside of school and work?</span></li>");
+ 	});
+
+
+ 	$(document).on('click', '#o-3d', function(){ /*What was ecobee like?*/
+ 		ecobee = 1;
+ 		removeOptions();
+		$("#messages").append("<li class='message-li'><div class='user-message container'>What was ecobee like?</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message container'>I was a Product Manager at <a href='https://www.ecobee.com/' target='_blank'>ecobee</a>, where I iterated on the design of a new ecobee hardware product through rapid 3D print prototyping, user testing and employee field trials.</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>My favourite project of the term was designing a Product Analytics Dashboard to be used internally for data-driven product decisions. I was given the opportunity to completely own the project: outlining user stories, success benchmarks and a plan for implementation .</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>I also organized and executed several customer field trials for unreleased products, ensuring reliable FUSS and Net Promotor Scores of >65%.</div></li>");
+		if (agf != 1){
+			$("#options").append("<li class='option' id='o-4a'><span>How about AGF?</span></li>");
+		}
+		if (td != 1){
+			$("#options").append("<li class='option' id='o-4c'><span>How about TD?</span></li>");
+		}
+		if (veeva != 1){
+			$("#options").append("<li class='option' id='o-4d'><span>What did you do at Veeva?</span></li>");
+		}
 		if (study != 1){
 			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
 		}
@@ -169,10 +234,10 @@ $(document).ready(function(){
   		study = 1;
  		removeOptions();
 		$("#messages").append("<li class='message-li'><div class='user-message container'>How's studying going?</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message container'>Having completed 2 school terms, I've got some favourite courses already:</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message container'>Having completed 4 school terms, I've got some favourite courses already:</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message-2 container'>Digital Systems (combinational logic and microcomputer interfacing),</div></li>");
 		$("#messages").append("<li class='message-li'><div class='bot-message-3 container'>Graphics (3D CAD and technical drawings),</div></li>");
-		$("#messages").append("<li class='message-li'><div class='bot-message-4 container'>...and of course, Human Factors in Design (human-machine environments, ergonomic design and information processing).</div></li>");
+		$("#messages").append("<li class='message-li'><div class='bot-message-4 container'>...Human Factors in Design (human-machine interfaces and ergonomic design).</div></li>");
 		if (coop != 1){
 			$("#options").append("<li class='option' id='o-2a'><span>Tell me about co-op.</span></li>");
 		}
@@ -191,6 +256,9 @@ $(document).ready(function(){
 		}
 		if (veeva != 1){
 			$("#options").append("<li class='option' id='o-4d'><span>What did you do at Veeva?</span></li>");
+		}
+		if (ecobee != 1){
+			$("#options").append("<li class='option' id='o-4e'><span>What was ecobee like?</span></li>");
 		}
 		if (study != 1){
 			$("#options").append("<li class='option' id='o-4b'><span>Tell me about your courses.</span></li>");
@@ -259,7 +327,7 @@ $("#name").click(
 });
 
 function removeOptions(){
-	$("#o-1a, #o-1b, #o-2a, #o-2b, #o-2c, #o-3a, #o-3b, #o-3c, #o-4a, #o-4b, #o-4c, #o-4d, #o-5a, #o-5b").remove();
+	$("#o-1a, #o-1b, #o-2a, #o-2b, #o-2c, #o-3a, #o-3b, #o-3c, #o-3d, #o-4a, #o-4b, #o-4c, #o-4d, #o-4e, #o-5a, #o-5b").remove();
 }
 
 function closeProjects(){

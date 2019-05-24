@@ -9,9 +9,16 @@ h2 {
 	font-family: Work Sans, sans-serif;
   font-size: 1.8em;
   overflow: visible;
+  color: white;
 }
 
 .section-p {
+  font-family: Work Sans, sans-serif;
+  font-size: 0.9em;
+  overflow: visible;
+}
+
+.card-text {
   font-family: Work Sans, sans-serif;
   font-size: 0.9em;
   overflow: visible;
@@ -49,12 +56,14 @@ body {
 	-webkit-animation: backgroundRainbow 3s infinite;
 }*/
 
+/* HOVER AFFECTS FOR 'RACHELYN COLLINS' TITLE
+
 #name:hover {
   animation: nameRainbow 3s infinite;
   -webkit-animation: nameRainbow 3s infinite;
   -webkit-text-stroke-width: 1px;
 /*  -webkit-text-stroke-color: grey;*/
-}
+}*/
 
 .header {
 	cursor: pointer;
@@ -75,6 +84,10 @@ body {
 	font-family: Work Sans, sans-serif;
 	font-size: 1em;
 }
+
+
+
+/* RAINBOW ANIMATION FOR 'RACHELYN COLLINS' TITLE
 
 @keyframes backgroundRainbow {
   0%   {background: #ffe7e7;}
@@ -106,7 +119,7 @@ body {
   50%  {color: #a64253;}
   75%  {color: #297373;}
   100% {color: #ff8552;}
-}
+}*/
 
 .section {
     width: 60%;
@@ -115,6 +128,8 @@ body {
     margin: 0 auto;
     padding: 20px;
     overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 3px;
 }
 
 #line1 {
@@ -130,19 +145,41 @@ body {
 }
 
 .project-thumbnail {
-	margin: 10px;
-	width: 30%;
-	display: block;
-	float: left;
-	cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 2%;
+  margin-left: 2%;
+  width: 46%;
+  padding: 10px;
+  display: block;
+  float: left;
+  background-color: white;
+  cursor: pointer;
+}
+
+.info-block {
+  margin: 10px;
+  width: 30%;
+  display: block;
+  float: left;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.info-block-title {
+  margin-top: -10px;
+  color: black;
 }
 
 .project-title {
 	font-family: Work Sans, sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 0;
-    line-height: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+  line-height: 15px;
+  margin-bottom: 15px;
+  color: #212529;
 }
 
 .project-description {
@@ -159,20 +196,20 @@ body {
 }
 
 .project-main {
-	border-bottom: 4px solid black;
+	border-bottom: 4px solid #212529;
 }
 
 .tilt-main {
-	-webkit-transform: rotate(-354deg);
-    -moz-transform: rotate(-354deg);
-    -ms-transform: rotate(-354deg);
+	-webkit-transform: rotate(-357deg);
+    -moz-transform: rotate(-357deg);
+    -ms-transform: rotate(-357deg);
 }
 
 .tilt-title {
-	-webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-    -ms-transform: rotate(-10deg);
-    color: #05386B;
+	-webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    color: #9886E0;
 }
 
 #footer {
@@ -199,7 +236,13 @@ a:hover {
 /*About section*/
 
 .section-about-100 {
+  margin-top: 100px;
   width: 100%;
+  color: white;
+}
+
+#section-about {
+  background-image: linear-gradient(#ED8A82, #EFBF67)
 }
 
 .skills-category {
@@ -235,7 +278,7 @@ a:hover {
 .position {
   font-family: Work Sans, sans-serif;
   font-size: 1.2em;
-  color: #297373;
+  color: #21B6AF;
   overflow: visible;
   font-weight: bold;
 }
@@ -269,4 +312,61 @@ a:hover {
 
 .hide-trees {
   visibility: hidden;
+}
+
+#hi-paragraph {
+  margin-bottom: 35px;
+}
+
+.card {
+  float: left;
+  margin: 2px;
+  border-color: white !important;
+  border-radius: 0 !important;
+}
+
+.card-skills-bigger {
+  background-color: white !important;
+  margin-top: 10px;
+  margin-right: 2%;
+  margin-left: 2%;
+  width: 29.3%;
+}
+
+.card-title {
+  margin-top: -40px;
+  margin-left: -21px;
+  font-weight: bold;
+  font-size: 21px;
+  color: #ffffff85;
+}
+
+.card-body {
+  color: black;
+}
+
+.experience-section {
+  clear: left;
+}
+
+#section-experience {
+  background-image: linear-gradient(#B9E567, #71C3D6);
+}
+
+.card-experience-bigger {
+  width: 100% !important;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.bg-primary {
+  background-color: white !important;
+}
+
+#section-projects {
+  background-image: linear-gradient(#EBA4C4, #9886E0);
+}
+
+#section-projects-subheading {
+  color: white;
 }
